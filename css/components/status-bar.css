@@ -2,8 +2,10 @@
     display: flex;
     justify-content: center;
     padding: 5px 3px;
+    margin-bottom: 50px;
     position: fixed;
     width: 100%;
+    background-color: rgb(241, 241, 241);
 }
 .status-bar__column{
     width: 33%;

@@ -25,15 +25,81 @@
         <i class="fa-solid fa-bolt"></i>
     </div>
 
+    <header class="screen-header">
+        <h1 class="screen-header__title">Friends</h1>
+        <div class="screen-header__icons">
+            <span><a href="#"></a><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><a href="#"></a><i class="fa-solid fa-music fa-lg"></i></span>
+            <span><a href="#"></a><i class="fa-solid fa-gear fa-lg"></i></span>
+        </div>
+    </header>
+
+    <a class="friends-display-link">
+        <i class="fa-solid fa-circle-info"></i> Friends' Name Display 
+        <i class="fa-solid fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friends-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img src="https://avatars.githubusercontent.com/u/130161642?v=4"
+                class="user-component__avatar user-component__avatar--xl" />
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Rangbit</h4>
+                    <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+                </div>
+            </div>
+            <div class="user-component__column"></div>
+        </div>
+        <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+                <span>Channel</span>
+                <i class="fa-solid fa-chevron-up fa-xs"></i>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img src="data:image/png;base64,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"
+                    class="user-component__avatar user-component__avatar--sm" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
+                        <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span>2 </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                </div>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img src="https://www.artinsight.co.kr/data/tmp/2206/20220613140207_qgstsfsb.png"
+                    class="user-component__avatar user-component__avatar--sm" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">하검</h4>
+                        <h6 class="user-component__subtitle"> Babo </h6>
+                    </div>
+                </div>
+                <!-- 상태메세지 작성구간 -->
+            </div>
+        </div>
+    </main>
+
+    
+        
+
     <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="fa-solid fa-user fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="#"><i class="fa-regular fa-comment fa- fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="#"><i class="fa-solid fa-ellipsis fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="fa-solid fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn"><a class="nav__link" href="#"><span class="nav__notification">1</span><i
+                        class="fa-regular fa-comment fa- fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+            </li>
+            <li class="nav__btn"><a class="nav__link" href="#"><span class="nav__ellipsis-alarm"></span><i
+                        class="fa-solid fa-ellipsis fa-2x"></i></a></li>
         </ul>
     </nav>
-    
+
 
     <!-- fontawesome kit import -->
     <script src="https://kit.fontawesome.com/d2846f63b1.js" crossorigin="anonymous"></script>

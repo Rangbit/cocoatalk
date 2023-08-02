@@ -47,6 +47,10 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+.user-component__subtitle i {
+    color: rgba(255, 0, 0, 0.2);
+}
+
 .user-component__column:last-child {
     color: rgba(0, 0, 0, 0.4);
     display: flex;

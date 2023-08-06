@@ -5,10 +5,10 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to cocoa Clone</title>
+    <title>Chat with Rangbit - cocoa Clone</title>
 </head>
 
-<body>
+<body class="chat-screen">
     <div class="status-bar">
         <!-- <div class="status-bar__column"></div> -->
         <div class="status-bar__column">
@@ -28,20 +28,24 @@
         </div>
     </div>
 
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to Cocoa Clone</h1>
-        <p class="welcome-header__text">If you have a Cocoa Account, log in with your email or phone number.</p>
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="more.html">
+                <i class="fa-solid fa-angle-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">Rangbit</h1>
+        </div>
+        <div class="alt-header__column">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><i class="fa-solid fa-bars fa-lg"></i></span>
+        </div>
     </header>
 
-
-    <!-- form method에는 POST 와 GET 사용가능, DB와 연결될땐 POST 사용, GET 보안취약 -->
-    <form action="friends.html" method="get" class="login-form">
-        <input name="username" type="text" placeholder="Email or phone number">
-        <input name="password" type="Password" placeholder="Password">
-        <input type="submit" value="Log In" />
-        <input type="submit" value="Sign Up" />
-        <a href="#">Find Cocoa Account or Password</a>
-    </form>
+    <main class="main-screen">
+      
+    </main>
 
     <!-- fontawesome kit import -->
     <script src="https://kit.fontawesome.com/d2846f63b1.js" crossorigin="anonymous"></script>

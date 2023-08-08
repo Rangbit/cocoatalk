@@ -89,3 +89,72 @@
 .message-row--own .message__time {
     order: 0;
 } */
+
+.reply {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.reply i {
+    opacity: 0.6;
+}
+
+.reply .reply__column:first-child {
+    width: 5%;
+}
+
+.reply .reply__column:last-child {
+    width: 95%;
+    position: relative;
+}
+
+.reply input {
+    height: 30px;
+    width: 100%;
+    border: var(--main--border);
+    border-radius: 20px;
+    background-color: rgb(243, 243, 243);
+    padding-left: 20px;
+}
+
+.reply__column:first-child >i {
+    position: absolute;
+    left: 17px;
+}
+
+.reply__column:last-child >i,
+.reply__column:last-child button {
+    position: absolute;
+    right: -23px;
+    top: 1px;
+}
+
+.reply__column:last-child >i {
+    right: 20px;
+    top: 17px;
+    font-size: 1.1rem;
+}
+
+.reply__column button {
+    background-color: var(--yellow);
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.reply__column button i {
+    opacity: 1;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+    outline: none;
+}
